@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import checklistIcon from "./Checklist-PNG-File.png"; // Adjust the path as needed
+import checklistIcon from "./Checklist-PNG-File.png"; 
 
 const TodoList = ({ setDeletedTasks }) => {
     const [tasks, setTasks] = useState([]);
@@ -43,7 +43,7 @@ const TodoList = ({ setDeletedTasks }) => {
 
     return (
         <div id="todo-app">
-            {/* Header and Input Box */}
+            
             <div className="add-box">
                 <img src={checklistIcon} alt="Checklist Icon" className="header-icon" />
                 <h2 className="todo-header">Add Task Here</h2>
@@ -59,7 +59,7 @@ const TodoList = ({ setDeletedTasks }) => {
                 <button id="add-button" onClick={addTask}>Add</button>
             </div>
 
-            {/* Task List with Numbers */}
+            
             <ol>
                 {tasks.map((task, index) => (
                     <li key={index} className={`task ${task.completed ? "completed" : ""}`}>
