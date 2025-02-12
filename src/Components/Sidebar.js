@@ -3,7 +3,7 @@ import React from "react";
 const Sidebar = ({ position, deletedTasks }) => {
     return (
         <aside className={`sidebar ${position}`}>
-            {position === "left" ? <p>Sidebar</p> : <DeletedTasksList deletedTasks={deletedTasks} />}
+            {position === "left" ? <p></p> : <DeletedTasksList deletedTasks={deletedTasks} />}
         </aside>
     );
 };
