@@ -193,3 +193,13 @@ button{
     font-weight: bold;
     margin-right: 8px;
 }
+@media (max-width: 600px) {
+    .task {
+        flex-direction: column; /* Stack task elements vertically */
+        align-items: flex-start;
+    }
+
+    .task button {
+        width: 100%; /* Full-width buttons for better touch interaction */
+    }
+}
