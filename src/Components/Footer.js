@@ -13,7 +13,7 @@ const Footer = () => {
         return () => document.querySelector("main").removeEventListener("scroll", handleScroll);
     }, []);
 
-    return <footer style={{ display: isVisible ? "block" : "none" }}>!! You Reaches End of The List !! </footer>;
+    return <footer style={{ display: isVisible ? "block" : "none" }}>!! You have Reached End of The List !! </footer>;
 };
 
 export default Footer;
